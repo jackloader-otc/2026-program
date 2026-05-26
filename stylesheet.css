@@ -1,0 +1,96 @@
+* {
+    font-family: 'Brush Script'; 
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+    body {
+      background-color: rgb(229, 10, 10)
+    }
+
+z
+
+  #header {
+    background-image: url("./images/1999473479-822373fa24a4f0f5acb1074df30a75f9a5f4d53b06429281b883fe10019a80de-d.webp");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: yellow;
+    position: absolute;
+    text-align: center;
+    top: 110Px;
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  .sneaky_tag h1 {
+    color: white;             
+    font-size: 350 rem;
+    text-align: center;
+    top: 710px;
+    border: #ff0000;       
+  }
+
+  h2{
+    font-size: xx-large;
+    color: yellow;
+    text-align: center;
+  }
+
+  p {
+    font-size: larger;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+  .navbar {
+    padding: 0;
+    background-color: #000;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 14px 16px;
+  }
+  
+  .navbar a:hover {
+    background-color: #222222;
+  }
+  
+  
+  .navbar {
+    background-color: red;     
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    position: sticky;           
+    top: 0;
+    z-index: 1000;             
+  }
+  
+  .navbar a {
+    color: yellow;                  
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: black;     
+    border-radius: 4px;
+  }
+
+
