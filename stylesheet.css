@@ -24,7 +24,7 @@
     color: yellow;
     position: absolute;
     text-align: center;
-    top: 110Px;
+    top: 50Px;
     width: 100%;
     font-size: 4rem;
   }
@@ -33,7 +33,7 @@
     color: white;             
     font-size: 350 rem;
     text-align: center;
-    top: 710px;
+    top: 600px;
     border: #ff0000;       
     background-color: #ff0000;
   }
@@ -144,5 +144,3 @@
     background-color: black;     
     border-radius: 4px;
   }
-
-
