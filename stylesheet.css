@@ -144,3 +144,21 @@
     background-color: black;     
     border-radius: 4px;
   }
+
+  .main-burgers{
+    max-height: 200px;
+  }
+
+.container {
+  position: relative;
+}
+
+
+.burger-block {
+  position:absolute;  
+  bottom: 20px;
+  right: 20px;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
+}
