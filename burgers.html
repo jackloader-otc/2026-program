@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>McDonald’s - Burgers</title>
+  <title>McDonald's - Burgers</title>
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="cart.css">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
     <a href="drinks.html">drinks</a>
     <a href="desserts.html">desserts</a>
     <a href="See-food-deals.html">food deals</a>
+    <a href="cart.html" class="cart-link">Cart 🛒 <span class="cart-count">0</span></a>
   </nav>
 
   <header id="header-Burgers">
@@ -24,43 +26,67 @@
   <div class="container">
     <img src="images/Big Mac.jpg" alt="Big-mac">
     <div class="burgers-block">
-      <p>THE BIG MAC IS BACK AT McDONALD’S</p>
+      <p>THE BIG MAC IS BACK AT McDONALD'S</p>
     </div>
   </div>
 
   <section class="menu-grid-section">
     <div class="menu-grid">
-      
-      <div class="product-card">
+
+      <div class="product-card" data-name="Big Mac" data-price="11.10">
         <div class="image-box">
           <img src="./images/image_6e02d37c.png" alt="Big Mac">
           <span class="price-tag">$11.10</span>
         </div>
         <p class="product-name">Big Mac</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Quarter Pounder" data-price="11.30">
         <div class="image-box">
           <img src="./images/image_e0022cd1.png" alt="Quarter Pounder">
           <span class="price-tag">$11.30</span>
         </div>
         <p class="product-name">Quarter Pounder</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Cheeseburger" data-price="6.70">
         <div class="image-box">
           <img src="images/image_f56cf3be.png" alt="Cheeseburger">
           <span class="price-tag">$6.70</span>
         </div>
         <p class="product-name">Cheeseburger</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="McFish" data-price="4.20">
         <div class="image-box">
           <img src="./images/image_4347e7de.png" alt="Mc fish">
           <span class="price-tag">$4.20</span>
         </div>
         <p class="product-name">McFish</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
     </div>
@@ -68,37 +94,61 @@
 
   <section class="menu-grid-section">
     <div class="menu-grid">
-      
-      <div class="product-card">
+
+      <div class="product-card" data-name="Hamburger" data-price="6.50">
         <div class="image-box">
           <img src="./images/image_3b93dc36.png" alt="hamburger">
           <span class="price-tag">6.50</span>
         </div>
         <p class="product-name">hamburger</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="McChicken" data-price="10.60">
         <div class="image-box">
           <img src="./images/image_af49a077.png" alt="McChicken">
           <span class="price-tag">$10.60</span>
         </div>
         <p class="product-name">McChicken</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Bacon Cheeseburger" data-price="8.50">
         <div class="image-box">
           <img src="./images/image_8a1d773b.png" alt="backon Cheeseburger">
           <span class="price-tag">$8.50</span>
         </div>
         <p class="product-name">backon Cheeseburger</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Double Cheeseburger" data-price="9.00">
         <div class="image-box">
           <img src="./images/image_4616ebc6.png" alt="double Cheeseburger">
           <span class="price-tag">$9.00</span>
         </div>
         <p class="product-name">double Cheeseburger</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
     </div>
@@ -106,42 +156,66 @@
 
   <section class="menu-grid-section">
     <div class="menu-grid">
-      
-      <div class="product-card">
+
+      <div class="product-card" data-name="Triple Cheeseburger" data-price="11.50">
         <div class="image-box">
           <img src="./images/image_c12d8044.png" alt="TRIPPLE Cheeseburger">
           <span class="price-tag">$11.50</span>
         </div>
         <p class="product-name">TRIPPLE Cheeseburger</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="McCrispy" data-price="9.00">
         <div class="image-box">
           <img src="./images/image_6b94de72.png" alt="McCrispy">
           <span class="price-tag">$9.00</span>
         </div>
         <p class="product-name">McCrispy</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Double Quarter Pounder" data-price="14.80">
         <div class="image-box">
           <img src="images/image_e0022cd1.png" alt="Cheeseburger">
           <span class="price-tag">$14.80</span>
         </div>
         <p class="product-name">Double QuarterPonder</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Double Big Mac" data-price="13.50">
         <div class="image-box">
           <img src="./images/image_10d3c6bd.png" alt="Double Big-mac">
           <span class="price-tag">$13.50</span>
         </div>
         <p class="product-name">LTF: Double Big-mac</p>
+        <div class="qty-selector">
+          <button class="qty-btn qty-minus" type="button">-</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn qty-plus" type="button">+</button>
+        </div>
+        <button class="add-to-cart-btn" type="button">Add to Cart</button>
       </div>
 
     </div>
   </section>
 
-
+  <script src="cart.js"></script>
 </body>
 </html>
